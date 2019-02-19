@@ -1,0 +1,17 @@
+{
+  "name": "tinyvoter",
+  "version": "0.0.1",
+  "description": "Afgiv din stemme",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "anderskoch",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^2.0.8",
+    "md5": "^2.2.1",
+    "uuid": "^3.3.2"
+  }
+}

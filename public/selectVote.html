@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stemmeboksen</title>
+    <link rel="stylesheet" href="milligram.min.css">
+    <link rel="stylesheet" href="simple.css">
+</head>
+
+<body class="">
+    <button id="menu" style="margin: 10px 10px 10px 10px" class="" onclick="menu()">Gå til Menu</button>
+    <div class="container">
+        <div class="row" style>
+            <div class="column">
+                <h1 style="margin: 10px 10px 50px 0px;">Vælg en afstemning</h1>
+            </div>
+        </div>
+        <div class="row" style>
+            <div class="column">
+                <div style="margin: 10px 10px 50px 0px;">
+                    <select id="waitingVotes">
+                        
+                    </select>
+                </div>
+            </div>
+        </div>
+        <div class="row" style>
+            <div class="column">
+                <input type="checkbox" id="fullscreen" value="fullscreen">Fuld skærm<br>
+                <button style="margin: 10px 10px 50px 0px;" onclick="startVote()">Start afstemning</button>
+            </div>
+        </div>
+    </div>
+    <script src="selectVote.js"></script>
+</body>
+
+</html>

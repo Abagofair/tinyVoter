@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Opret Afstemning</title>
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="milligram.min.css">
+    <link rel="stylesheet" href="simple.css">
+</head>
+
+<body>
+    <button id="menu" style="margin: 10px 10px 10px 10px" class="" onclick="menu()">Gå til Menu</button>
+    <div class="container">
+        <div class="row" style>
+            <div class="column">
+                <h1 id="viewTitle" style="margin: 10px 10px 50px 0px;">Opret Afstemning</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <div id="existingParts" style="margin: 0px 10px 10px 10px">
+                    <h3 style="margin: 0px 10px 10px 0px">Afstemningsdele</h3>
+                </div>
+            </div>
+            <div class="column">
+                <form>
+                    <fieldset id="partCreation">
+                        <label class="" for="partName">Klassenavn</label>
+                        <input class="" placeholder="3A" id="partName" type="text">
+                        <label class="partLbl" for="option1">Kandidat</label>
+                        <input class="partOption" placeholder="Peter Pedal" id="option1" type="text">
+                        <label class="partLbl" for="option2">Kandidat</label>
+                        <input class="partOption" placeholder="Anders And" id="option2" type="text">
+                        <label class="partLbl" for="option3">Kandidat</label>
+                        <input class="partOption" placeholder="Dumbo" id="option3" type="text">
+                        <label class="partLbl" for="option4">Kandidat</label>
+                        <input class="partOption" placeholder="Søren Sørensen" id="option4" type="text">
+                        <a id="addOption" style="margin: 10px 10px 10px 10px" onclick="addOption()">[+] Tilføj ekstra Kandidat</a>
+                        <br>
+                        <input class="button-primary" value="Tilføj del" id="submitPart" type="button" onclick="createPart()">
+                    </fieldset>
+                </form>
+            </div>
+            <div class="column">
+                <form>
+                    <fieldset>
+                        <label for="voteName">Navn til afstemningen</label>
+                        <input placeholder="Børnerådet" id="voteName" type="text">
+                        <label for="password">Kodeord til administration</label>
+                        <input id="password" type="password">
+                        <input class="button-primary" value="Gem Afstemning" id="createVote" type="button" onclick="saveVote()">
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div id="bottomPage" style="margin: 10px 10px 10px 10px;position: fixed;
+    bottom: 0;">
+        <h4 id="subTitle" style="margin: 0px 0px 50px 0px;"></h4>
+    </div>
+
+    <script src="createVote.js">
+    </script>
+</body>
+
+</html>

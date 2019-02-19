@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Stemmeboksen</title>
+    <link rel="stylesheet" href="milligram.min.css">
+    <link rel="stylesheet" href="simple.css">
+</head>
+
+<body class="simple-center">
+    <div class="container">
+        <div class="row" style>
+            <div class="column">
+                <h1 style="margin: 10px 10px 50px 0px;">Stemmeboksen</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <button id="createVote" class="button" style="width: 300px;margin: 10px 10px 10px 0px;" onclick="changeView(this.id)">Opret
+                    Afstemning</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <button id="startVote" class="button" style="width: 300px;margin: 10px 10px 10px 0px;" onclick="changeView(this.id)">Start Afstemning</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <button class="button" style="width: 300px;margin: 10px 10px 10px 0px;">Fortsæt Afstemning</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <button class="button" style="width: 300px;margin: 10px 10px 10px 0px;">Administrer Afstemning</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+                <button class="button" style="width: 300px;margin: 10px 10px 10px 0px;" onclick="kill()">Afslut Program</button>
+            </div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
